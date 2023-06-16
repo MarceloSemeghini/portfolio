@@ -11,7 +11,7 @@
                         </a>
                     </div>
                     <div class="project soon" v-else>
-                        <h1>{{ 'SOON' }}</h1>
+                        <h1>{{ $t('projects.soon') }}</h1>
                     </div>
                 </template>
             </div>
