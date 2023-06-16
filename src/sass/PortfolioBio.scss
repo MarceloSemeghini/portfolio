@@ -1,0 +1,46 @@
+.bio{
+    .section{
+        height: 100vh;
+        scroll-snap-align: start;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .intro{
+        scroll-snap-align: start;
+
+        width: 100%;
+        justify-content: space-around;
+        h1 {
+            width: 45rem;
+            font-size: 5rem;
+        }  
+        .profile-box{
+            width: 25rem;
+            height: 25rem;
+            border-radius: 50%;
+            border: $complementary 3px dashed;
+            box-shadow: 0 0 3rem black;
+
+            overflow: hidden;
+            img{
+                height: 100%;
+            }
+            .image2{
+                position: relative;
+                top: -25rem;
+            }
+        }
+        
+    }
+    .content{
+        margin: auto;
+        margin-top: 10rem;
+        width: 40rem;
+
+        h2{
+            text-align: start;
+        }
+    }
+}

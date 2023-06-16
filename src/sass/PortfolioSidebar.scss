@@ -1,0 +1,41 @@
+.sidebar-box{
+    top: 0;
+    right: 0;
+    width: 4rem;
+    height: 100vh;
+    padding: 5rem 0 0 0;
+    
+    background-color: $secondary;
+    box-shadow: 0 0 2rem $primary inset;
+    
+    position: fixed;
+    .link-box{
+        margin: auto;
+        height: 85vh;
+        width: 4rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .info-popup{
+            width: auto;
+            transform:scaleY(0);
+            transition: transform 0.1s;
+
+            right: 2rem;
+            margin-top: -2rem;
+            padding: 1rem 2rem 1rem 2rem;
+
+            background-color: $primary;
+            box-shadow: 0 0 1rem $secondary inset;
+
+            position: fixed;
+        }
+        .icon-box:hover{
+            .info-popup{
+                transform:scaleY(1);
+                
+            }
+        }
+    }
+}

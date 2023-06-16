@@ -1,0 +1,62 @@
+$primary: #000814;
+$secondary: #001d3d;
+$complementary: #0f0;
+
+@import './PortfolioSidebar.scss';
+@import './PortfolioHeader.scss';
+@import './PortfolioBio.scss';
+@import './PortfolioProjects.scss';
+
+#app {
+    margin: -1.1rem 0 0 0;
+    font-family: Lora, 'Times New Roman', Times, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: $complementary;
+    text-shadow: 0 0 2rem $secondary;
+  }
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    margin: 0;
+
+    background-color: $primary;
+}
+
+a {
+    color: $complementary;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #008E1F;
+    text-decoration: none;
+}
+
+canvas {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    opacity: 25%;
+    .binary{
+        color: $complementary;
+    }
+}
+
+.visible{
+    z-index: -1;
+    transition: opacity 0.5s;
+    opacity: 100%;
+}
+
+.invisible{
+    transition: opacity 0.5s;
+    opacity: 0;
+}
