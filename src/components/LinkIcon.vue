@@ -1,7 +1,7 @@
 <template>
-    <div class="icon-box">
+    <div :class="open ? 'opened' : 'closed'" @mouseover="open = true" @mouseleave="open = false">
         <slot></slot>
-        <div class="info-popup">
+        <div class="popup">
             <div class="contact-info">
                 <h2>{{ text }}</h2>
             </div>
@@ -11,7 +11,10 @@
 <script>
 
     export default{
-        props: ['text']
+        props: ['text'],
+        data() {
+            return {open: false}
+        }
     }
 
 </script>

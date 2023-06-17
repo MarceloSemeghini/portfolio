@@ -30,6 +30,15 @@
             display: flex;
             border-radius: 50%;
             border: $complementary 2px solid;
+            .popup{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 2rem;
+                height: 7rem;
+                margin: -0.5rem 0 0 0;
+            }
         }
     }
 }

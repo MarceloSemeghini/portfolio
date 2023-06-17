@@ -60,3 +60,28 @@ canvas {
     transition: opacity 0.5s;
     opacity: 0;
 }
+
+.popup{
+    width: auto;
+
+    right: 2rem;
+    margin-top: -2rem;
+    padding: 1rem 2rem 1rem 2rem;
+
+    background-color: $primary;
+    box-shadow: 0 0 1rem $secondary inset;
+
+    position: fixed;
+}
+
+.opened{
+    .popup{
+        transition: transform 0.1s;
+        transform:scaleY(1);
+    }
+}
+.closed{
+    .popup{
+        transform:scaleY(0);
+    }
+}

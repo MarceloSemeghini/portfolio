@@ -6,7 +6,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
   import PHeader from '../components/PortfolioHeader.vue'
   import PSidebar from '../components/PortfolioSidebar.vue'
   import PBio from '../components/PortfolioBio.vue'
@@ -18,7 +17,6 @@
         PSidebar,
         PBio,
     },
-    
     mounted() {
       var canvas = this.$refs.binaryrain;
       var context = canvas.getContext("2d");
