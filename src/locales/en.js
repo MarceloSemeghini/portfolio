@@ -1,4 +1,8 @@
 export default {
+    sidebar: {
+        copied: 'COPIED',
+        couldnt_copy: "COULDN'T COPY"
+    },
     header: {
         about: 'ABOUT',
         projects: 'PROJECTS'

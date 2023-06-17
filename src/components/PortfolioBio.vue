@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="content section" id="about">
-            <h2 style="font-size: 4rem;">
+            <h2>
                 {{ $t('bio.get_in_touch') }}
             </h2>
         </div>

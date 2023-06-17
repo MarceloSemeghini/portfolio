@@ -43,3 +43,23 @@
     }
     
 }
+
+
+@media only screen and (max-width: 600px) {
+    .projects-box{
+        .project-row{
+            width: 80vw;
+            flex-direction: column;
+            .project{
+                width: 90%;
+                .image-box{
+
+                }
+                .soon{
+                }
+            }
+
+        }
+    
+    }
+}

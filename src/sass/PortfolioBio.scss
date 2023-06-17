@@ -40,7 +40,40 @@
         width:60rem;
 
         h2{
+            font-size: 3rem;
             text-align: start;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bio{
+        .section{
+            height: 95vh;
+            width: 80vw;
+            padding: 3rem 2rem 2rem 2rem;
+        }
+    
+        .intro{
+            flex-direction: column-reverse;
+            h1 {
+                margin: 0;
+                font-size: 4rem;
+                width: 80vw;
+                height: 20rem;
+            }  
+            .profile-box{
+                width: 15rem;
+                height: 15rem;
+                img{
+                }
+                .image2{
+                    top: -15rem;
+                }
+            }
+        }
+        .content{
+            width:25rem;
         }
     }
 }

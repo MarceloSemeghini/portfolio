@@ -42,3 +42,32 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .header-box{
+        .box{
+            padding: 0 0 0 0;
+
+            width: 10rem;
+        }
+        .link{
+            opacity: 0;
+        }
+        .name{
+            h1{
+                font-size: 2rem;
+            }
+        }
+        .flag{
+            padding: 0 3rem 0 0;
+            .borders{
+                .popup{
+                    width: 6rem;
+                    height: 15rem;
+                    margin: -0.5rem 1rem 0 0;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}
