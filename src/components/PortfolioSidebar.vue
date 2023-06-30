@@ -35,10 +35,8 @@ import LinkIcon from './LinkIcon.vue'
                 navigator.clipboard
                     .writeText(text)
                     .then(() => {
-                        console.log(this.$t('sidebar.copied'));
                     })
                     .catch(() => {
-                        console.log(this.$t('sidebar.couldnt_copy'));
                     });
             }
         }

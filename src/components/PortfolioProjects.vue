@@ -30,9 +30,6 @@
                 ]
             }
         },
-        mounted() {
-            console.log()
-        },
         methods: {
             getImage(name) {
                 var images = require.context('../assets/', false, /\.png$/)
