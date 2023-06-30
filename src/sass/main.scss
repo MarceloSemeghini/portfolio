@@ -14,7 +14,7 @@ $complementary: #0f0;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: $complementary;
-    text-shadow: 0 0 2rem $secondary;
+    text-shadow: 0 0 4rem $secondary;
 }
 html{
     scroll-behavior: smooth;
@@ -85,7 +85,7 @@ canvas {
 
 @media only screen and (max-width: 600px) {
     body {
-        width: 100vw;
+        width: 100%;
         position:absolute;
     }
 }
