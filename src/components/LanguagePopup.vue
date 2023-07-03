@@ -1,10 +1,10 @@
 <template>
     <div class="flag box">
         <div class="borders" :class="open ? 'opened' : 'closed'" @click="togglePopup()">
-            <template v-if="language === 'en'">
+            <template v-if="storedLanguage() === 'en'">
                 <img src="../assets/EUAflag.png" alt="flag">
             </template>
-            <template v-else-if="language === 'pt'">
+            <template v-else-if="storedLanguage() === 'pt'">
                 <img src="../assets/BRflag.png" alt="BRflag">
             </template>
             <div class="popup">
@@ -23,24 +23,27 @@
         data() {
             return {
                 open: false,
-                language: localStorage.getItem('lang')
             }
         },
         methods: {
             togglePopup(){
                 this.open = !this.open
             },  
+            storedLanguage(){
+                if(localStorage.getItem('lang')){
+                    return localStorage.getItem('lang')
+                } else {
+                    localStorage.setItem('lang', 'en');
+                    return 'en'
+                }
+            },
             changeLanguage(lang){
-                if(this.language != lang){
+                if(this.storedLanguage() != lang){
                     localStorage.setItem('lang', lang);
                     window.location.reload();
                 }
-            }
-        },
-        created () {
-            if(localStorage.getItem('lang') == null){
-                localStorage.setItem('lang', 'en')
-            }
+            },
+            
         }
     }
 </script>
