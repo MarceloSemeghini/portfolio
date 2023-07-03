@@ -17,13 +17,16 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-    }
-}
-
-
-@media only screen and (max-width: 600px) {
-    .sidebar-box{
-        .link-box{
+        button{
+            background-color: transparent;
+            border: 0;
+        }
+        .coppiedIcon{
+            z-index: 100;
+            position: fixed;
+            right: 0;
+            margin: 1.5rem 0.5rem 0 0;
         }
     }
 }
+
