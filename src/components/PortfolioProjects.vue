@@ -26,7 +26,7 @@
         data() {
             return {
                 projects: [
-                    {image: this.getImage('pokedexprint'), link: 'https://github.com/MarceloSemeghini/pokemon', name: 'pokedex'},
+                    {image: this.getImage('pokedexprint'), link: 'https://github.com/MarceloSemeghini/pokedex', name: 'pokedex'},
                 ]
             }
         },

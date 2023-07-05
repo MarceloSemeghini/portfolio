@@ -1,7 +1,9 @@
 <template>
     <div :class="open ? 'opened' : 'closed'" @mouseover="open = true" @mouseleave="open = false">
-        <template v-if="type === 'text'">
-            <slot></slot>
+        <template v-if="type === 'link'">
+            <a :href="link" target="_blank">
+                <slot></slot>
+            </a>
         </template>
         <template v-if="type === 'clipboard'">
             <button @click="copy()">
@@ -23,12 +25,16 @@
             text: {
                 type: String
             },
+            link: {
+                default: '',
+                type: String
+            },
             clipboardContent: {
                 default: '',
                 type: String
             },
             type: {
-                default: 'text',
+                default: 'link',
                 type: String
             },
         },
